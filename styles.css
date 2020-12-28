@@ -11,7 +11,26 @@ body {
 .parent {
 }
 
-.image img {
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+ul li::before {
+  content: "\200B";
+}
+
+.image-name-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
   width: 80%;
   height: auto;
   max-width: 250px;
@@ -110,6 +129,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  ul li {
+    padding: 10px;
   }
 }
 
