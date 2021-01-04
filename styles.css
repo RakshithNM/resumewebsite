@@ -5,7 +5,6 @@ body {
   color: #d6deeb;
   font-family: "JetBrains Mono", monospace;
   background-color: #011627;
-
 }
 
 .parent {
@@ -71,10 +70,6 @@ img {
   padding-bottom: 3%;
 }
 
-.projects-column .second-column {
-  padding-right: 5%;
-}
-
 .project-links a {
   color: limegreen;
 }
@@ -99,10 +94,6 @@ img {
 
 .side-projects-column .side-project {
   padding-bottom: 3%;
-}
-
-.side-projects-column .second-column {
-  padding-right: 5%;
 }
 
 .project-links a {
