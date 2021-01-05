@@ -7,9 +7,6 @@ body {
   background-color: #011627;
 }
 
-.parent {
-}
-
 ul {
   list-style: none;
   margin: 0;
@@ -129,5 +126,9 @@ img {
 @media only screen and (max-device-width: 767px) {
   .parent {
     max-width: 100%;
+  }
+  ul {
+    align-items: center;
+    flex-direction: column;
   }
 }
