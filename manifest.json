@@ -1,5 +1,10 @@
 {
  "name": "App",
+ "start_url": "/",
+ "background_color": "#011627",
+ "display": "standalone",
+ "scope": "/",
+ "theme_color": "#011627",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
