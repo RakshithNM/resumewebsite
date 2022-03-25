@@ -1,7 +1,6 @@
 body {
   box-sizing: border-box;
   margin: 0;
-  padding: 2%;
   color: #d6deeb;
   font-family: "JetBrains Mono", monospace;
   background-color: #011627;
@@ -9,25 +8,16 @@ body {
 
 .parent {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "side1 main side2";
+  grid-template-columns: 1fr min(60ch, calc(100% - 64px)) 1fr;
+  grid-column-gap: 32px;
+}
+
+.parent > * {
+  grid-column: 2;
 }
 
 a, p {
   font-size: 1.2em;
-}
-
-.side1 {
-  grid-area: side1;
-}
-
-main {
-  grid-area: main;
-}
-
-.side2 {
-  grid-area: side2;
 }
 
 ul {
@@ -87,12 +77,4 @@ h3 {
   color: #80a4c2;
   text-align: center;
   font-size: 2em;
-}
-
-@media only screen and (max-device-width: 767px) {
-  .parent {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "main";
-  }
 }
