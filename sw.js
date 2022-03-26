@@ -1,4 +1,4 @@
-const version = 11.0;
+const version = 12.0;
 var CACHE_NAME = 'rbcache';
 var urlsToCache = [
   '/',
