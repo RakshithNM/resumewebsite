@@ -4,11 +4,12 @@ body {
   color: #d6deeb;
   font-family: "JetBrains Mono", monospace;
   background-color: #011627;
+  font-size: 16px;
 }
 
 .parent {
   display: grid;
-  grid-template-columns: 1fr min(60ch, calc(100% - 64px)) 1fr;
+  grid-template-columns: 1fr min(80ch, calc(100% - 64px)) 1fr;
   grid-column-gap: 32px;
 }
 
@@ -16,8 +17,12 @@ body {
   grid-column: 2;
 }
 
-a, p {
-  font-size: 1.2em;
+a {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1.1rem;
 }
 
 ul {
@@ -38,14 +43,10 @@ ul li::before {
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.3rem;
 }
 
-.work-nuiteq h3 {
-  color: #7fdbca;
-}
-
-.work-inmobi h3 {
+.work h3 {
   color: #7fdbca;
 }
 
