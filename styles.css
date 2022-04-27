@@ -25,14 +25,13 @@ main {
 }
 
 div:not(.parent) {
-  margin-bottom: var(--size-fluid-1);
-  margin-top: var(--size-fluid-1);
+  margin-bottom: 20px;
+  margin-top: 20px;
   border-radius: var(--radius-4);
+  border: 2px solid var(--gray-0);
   padding: var(--size-fluid-2);
-  box-shadow: var(--shadow-4);
   transform: scale(1);
   transition: transform 0.3s;
-  border: 2px solid var(--gray-0);
 }
 
 div:not(.parent):hover {
@@ -81,8 +80,6 @@ a {
   background-color: var(--blue-7);
   border-radius: var(--radius-4);
   padding: var(--size-fluid-1) var(--size-fluid-2);
-  box-shadow: var(--shadow-2);
-  border: 2px solid currentColor;
 }
 
 h4 {
@@ -90,7 +87,6 @@ h4 {
   background-color: var(--gray-0);
   border-radius: var(--radius-4);
   padding: var(--size-fluid-1) var(--size-fluid-2);
-  border: 2px solid var(--gray-9);
   margin-bottom: var(--size-fluid-1);
 }
 
@@ -111,21 +107,17 @@ h4 {
 }
 
 h1 {
-  text-shadow: 0 3px 0 rgba(0, 0, 0, 0.8);
-  margin-bottom: var(--size-fluid-2);
-  background: linear-gradient(90deg,#ef5350,#f48fb1,#7e57c2,#2196f3,#26c6da,#43a047,#eeff41,#f9a825,#ff5722);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--gray-9);
+  margin-bottom: var(--size-fluid-3);
 }
 
-h2 {
+h3 {
   color: var(--gray-9);
   background-color: var(--teal-2);
   border-radius: var(--radius-4);
-  border: 2px solid var(--gray-9);
   text-align: center;
   margin: auto;
-  box-shadow: var(--shadow-4);
+  border: 2px solid var(--gray-9);
 }
 
 p {
