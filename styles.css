@@ -1,15 +1,8 @@
-:root {
-  --rb-shadow-color: 256 40% 100%;
-  --rb-shadow-strength: 25%;
-  --rb-shadow: 0 -1px 3px 0 hsl(var(--rb-shadow-color)/calc(var(--rb-shadow-strength) + 2%)),0 1px 2px -5px hsl(var(--rb-shadow-color)/calc(var(--rb-shadow-strength) + 2%)),0 2px 5px -5px hsl(var(--rb-shadow-color)/calc(var(--rb-shadow-strength) + 4%)),0 4px 12px -5px hsl(var(--rb-shadow-color)/calc(var(--rb-shadow-strength) + 5%)),0 12px 15px -5px hsl(var(--rb-shadow-color)/calc(var(--rb-shadow-strength) + 7%));
-  --rb-snowlive-primary: #60ABB0;
-}
-
 body {
   box-sizing: border-box;
   margin: 0;
   font-family: var(--font-mono); 
-  color: var(--gray-0); /* to be removed */
+  color: var(--gray-0);
   background-image: var(--gradient-15);
   background-size: cover;
   line-height: 1.5;
@@ -18,8 +11,8 @@ body {
 
 .parent {
   display: grid;
-  grid-template-columns: 1fr min(80ch, calc(100% - 64px)) 1fr;
-  grid-column-gap: 32px;
+  grid-template-columns: 1fr min(80ch, calc(100% - 16px)) 1fr;
+  grid-column-gap: 8px;
 }
 
 .parent > * {
