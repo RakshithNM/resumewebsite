@@ -38,6 +38,18 @@ div:not(.parent):hover {
   transform: scale(1.05);
 }
 
+div.recent {
+  background-color: var(--lime-9);
+}
+
+div.recent h6 {
+  line-height: 2.2rem;
+}
+
+div.recent li::marker {
+  content: "✨";
+}
+
 div.nuiteq {
   background-color: #483C68;
 }
