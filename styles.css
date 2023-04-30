@@ -1,3 +1,7 @@
+:root {
+  --border-radius: var(--radius-2);
+}
+
 body {
   box-sizing: border-box;
   margin: 0;
@@ -27,7 +31,7 @@ main {
 div:not(.parent) {
   margin-bottom: 20px;
   margin-top: 20px;
-  border-radius: var(--radius-4);
+  border-radius: var(--border-radius);
   border: 2px solid var(--gray-0);
   padding: var(--size-fluid-2);
   transform: scale(1);
@@ -39,7 +43,7 @@ div:not(.parent):hover {
 }
 
 div.recent {
-  background-color: var(--lime-9);
+  background-color: var(--orange-5);
 }
 
 div.recent h6 {
@@ -90,14 +94,14 @@ ul li::before {
 a {
   color: var(--gray-0);
   background-color: var(--blue-7);
-  border-radius: var(--radius-4);
+  border-radius: var(--border-radius);
   padding: var(--size-fluid-1) var(--size-fluid-2);
 }
 
 h4 {
   width: max-content;
   background-color: var(--gray-0);
-  border-radius: var(--radius-4);
+  border-radius: var(--border-radius);
   padding: var(--size-fluid-1) var(--size-fluid-2);
   margin-bottom: var(--size-fluid-1);
 }
@@ -126,7 +130,7 @@ h1 {
 h3 {
   color: var(--gray-9);
   background-color: var(--teal-2);
-  border-radius: var(--radius-4);
+  border-radius: var(--border-radius);
   text-align: center;
   margin: auto;
   border: 2px solid var(--gray-9);
