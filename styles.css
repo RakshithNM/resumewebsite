@@ -7,7 +7,7 @@ body {
   margin: 0;
   font-family: var(--font-mono); 
   color: var(--gray-0);
-  background-image: var(--gradient-15);
+  background-image: var(--gradient-26);
   background-size: cover;
   line-height: 1.5;
   scroll-behavior: smooth;
@@ -32,9 +32,13 @@ img {
   width: 100%;
   max-width: 300px;
   height: auto;
-  margin: 0 auto;
+  margin: 30px auto;
   border-radius: var(--radius-blob-5);
   box-shadow: var(--shadow-4);
+  transition: border-radius 500ms ease-in;
+  &:hover {
+    border-radius: var(--radius-5);
+  }
 }
 
 div:not(.parent) {
@@ -81,7 +85,7 @@ div.project {
 }
 
 div.side-project {
-  background-color: var(--pink-9);
+  background-color: var(--pink-7);
 }
 
 ul {
