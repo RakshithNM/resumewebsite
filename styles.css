@@ -1,5 +1,5 @@
 :root {
-  --border-radius: var(--radius-2);
+  --border-radius: var(--radius-4);
 }
 
 body {
@@ -28,10 +28,20 @@ main {
   margin-bottom: var(--size-fluid-3);
 }
 
+img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: var(--radius-blob-5);
+  box-shadow: var(--shadow-4);
+}
+
 div:not(.parent) {
   margin-bottom: 20px;
   margin-top: 20px;
   border-radius: var(--border-radius);
+  box-shadow: var(--shadow-3);
   border: 2px solid var(--gray-0);
   padding: var(--size-fluid-2);
   transform: scale(1);
@@ -62,6 +72,10 @@ div.inmobi {
   background-color: #0B4DCC;
 }
 
+div.responsibilities {
+  background-color: var(--teal-11);
+}
+
 div.project {
   background-color: var(--orange-9);
 }
@@ -83,7 +97,7 @@ ul {
   margin-bottom: var(--size-fluid-2);
 }
 
-ul li) {
+ul li {
   margin: var(--size-fluid-1) var(--size-fluid-2);
 }
 
@@ -92,10 +106,10 @@ ul li::before {
 }
 
 a {
-  color: var(--gray-0);
-  background-color: var(--blue-7);
-  border-radius: var(--border-radius);
-  padding: var(--size-fluid-1) var(--size-fluid-2);
+  color: var(--gray-11);
+  text-decoration: wavy;
+  text-decoration-line: underline;
+  text-shadow: 1px 1px 1px var(--gray-6);
 }
 
 h4 {
